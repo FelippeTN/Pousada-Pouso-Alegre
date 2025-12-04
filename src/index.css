@@ -1,0 +1,189 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import '@fontsource/playfair-display/400.css';
+@import '@fontsource/playfair-display/500.css';
+@import '@fontsource/playfair-display/600.css';
+@import '@fontsource/playfair-display/700.css';
+@import '@fontsource/lato/300.css';
+@import '@fontsource/lato/400.css';
+@import '@fontsource/lato/700.css';
+
+@layer base {
+  :root {
+    --background: 38 30% 97%;
+    --foreground: 25 20% 15%;
+
+    --card: 38 25% 95%;
+    --card-foreground: 25 20% 15%;
+
+    --popover: 38 30% 97%;
+    --popover-foreground: 25 20% 15%;
+
+    --primary: 145 35% 35%;
+    --primary-foreground: 38 30% 97%;
+
+    --secondary: 32 45% 85%;
+    --secondary-foreground: 25 20% 15%;
+
+    --muted: 32 20% 90%;
+    --muted-foreground: 25 15% 45%;
+
+    --accent: 25 60% 50%;
+    --accent-foreground: 38 30% 97%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 32 25% 85%;
+    --input: 32 25% 85%;
+    --ring: 145 35% 35%;
+
+    --radius: 0.5rem;
+
+    /* Custom design tokens */
+    --terracotta: 16 55% 50%;
+    --forest: 145 40% 30%;
+    --sand: 38 35% 88%;
+    --cream: 40 40% 96%;
+    --warm-brown: 25 35% 25%;
+    
+    /* Gradients */
+    --gradient-hero: linear-gradient(180deg, hsla(25, 20%, 15%, 0.4) 0%, hsla(25, 20%, 15%, 0.7) 100%);
+    --gradient-section: linear-gradient(180deg, hsl(var(--cream)) 0%, hsl(var(--background)) 100%);
+    
+    /* Shadows */
+    --shadow-soft: 0 4px 20px hsla(25, 20%, 15%, 0.08);
+    --shadow-card: 0 8px 30px hsla(25, 20%, 15%, 0.12);
+    --shadow-elevated: 0 20px 50px hsla(25, 20%, 15%, 0.15);
+  }
+
+  .dark {
+    --background: 25 20% 10%;
+    --foreground: 38 30% 95%;
+
+    --card: 25 18% 15%;
+    --card-foreground: 38 30% 95%;
+
+    --popover: 25 20% 10%;
+    --popover-foreground: 38 30% 95%;
+
+    --primary: 145 35% 45%;
+    --primary-foreground: 25 20% 10%;
+
+    --secondary: 32 25% 25%;
+    --secondary-foreground: 38 30% 95%;
+
+    --muted: 25 15% 20%;
+    --muted-foreground: 38 20% 65%;
+
+    --accent: 25 60% 55%;
+    --accent-foreground: 25 20% 10%;
+
+    --border: 25 15% 25%;
+    --input: 25 15% 25%;
+    --ring: 145 35% 45%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Custom animations */
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes scale-in {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-fade-up {
+  animation: fade-up 0.8s ease-out forwards;
+}
+
+.animate-fade-in {
+  animation: fade-in 0.6s ease-out forwards;
+}
+
+.animate-scale-in {
+  animation: scale-in 0.5s ease-out forwards;
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animation-delay-200 {
+  animation-delay: 0.2s;
+}
+
+.animation-delay-400 {
+  animation-delay: 0.4s;
+}
+
+.animation-delay-600 {
+  animation-delay: 0.6s;
+}
+
+/* Scroll animations */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
