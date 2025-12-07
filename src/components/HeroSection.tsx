@@ -24,10 +24,10 @@ const HeroSection = () => {
           Bem-vindo à
         </span>
         <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-semibold text-primary-foreground mb-6 opacity-0 animate-fade-up animation-delay-200">
-          Pousada Pouso Alegre
+          Hospedaria Pouso Alegre
         </h1>
         <p className="font-body text-lg md:text-xl text-sand/90 max-w-2xl mx-auto mb-10 opacity-0 animate-fade-up animation-delay-400">
-          Um refúgio de tranquilidade cercado pela natureza. Venha viver momentos inesquecíveis em meio ao charme do interior.
+          Seu refúgio de tranquilidade em Macuco, na Serra do Rio de Janeiro. Desfrute do conforto e da hospitalidade em meio à natureza exuberante.
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 opacity-0 animate-fade-up animation-delay-600">
           <Button variant="accent" size="lg" className="min-w-[200px]">

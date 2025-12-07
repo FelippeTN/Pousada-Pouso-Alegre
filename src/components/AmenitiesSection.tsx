@@ -4,12 +4,12 @@ import { Waves, UtensilsCrossed, TreePine, Car, Wifi, Mountain } from "lucide-re
 
 const AmenitiesSection = () => {
   const amenities = [
-    { icon: Waves, title: "Piscina", description: "Piscina ao ar livre com vista panorâmica" },
-    { icon: UtensilsCrossed, title: "Café da Manhã", description: "Café colonial com produtos regionais" },
-    { icon: TreePine, title: "Trilhas", description: "Acesso a trilhas ecológicas" },
-    { icon: Car, title: "Estacionamento", description: "Estacionamento gratuito e seguro" },
-    { icon: Wifi, title: "Wi-Fi", description: "Internet de alta velocidade" },
-    { icon: Mountain, title: "Passeios", description: "Passeios guiados pela região" },
+    { icon: Waves, title: "Área de Lazer", description: "Espaços ao ar livre para relaxamento" },
+    { icon: UtensilsCrossed, title: "Café da Manhã", description: "Café da manhã caseiro incluso" },
+    { icon: TreePine, title: "Natureza", description: "Contato direto com a Mata Atlântica" },
+    { icon: Car, title: "Estacionamento", description: "Estacionamento gratuito" },
+    { icon: Wifi, title: "Wi-Fi", description: "Internet sem fio" },
+    { icon: Mountain, title: "Região Serrana", description: "Próximo a cachoeiras e trilhas" },
   ];
 
   return (

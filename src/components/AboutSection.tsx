@@ -4,18 +4,18 @@ const AboutSection = () => {
   const features = [
     {
       icon: Leaf,
-      title: "Natureza Exuberante",
-      description: "Cercada por jardins tropicais e montanhas deslumbrantes",
+      title: "Mata Atlântica",
+      description: "Rodeada pela exuberante Mata Atlântica da região serrana",
     },
     {
       icon: Heart,
-      title: "Hospitalidade Calorosa",
-      description: "Atendimento personalizado que faz você se sentir em casa",
+      title: "Ambiente Familiar",
+      description: "Atendimento acolhedor em uma hospedaria de gestão familiar",
     },
     {
       icon: Mountain,
-      title: "Experiências Únicas",
-      description: "Trilhas, cachoeiras e passeios pela região",
+      title: "Localização Estratégica",
+      description: "Próximo às belezas naturais e atrações de Macuco e região",
     },
   ];
 
@@ -27,12 +27,12 @@ const AboutSection = () => {
             Sobre Nós
           </span>
           <h2 className="font-display text-4xl md:text-5xl font-semibold text-foreground mb-6">
-            Seu Refúgio no Coração da Natureza
+            Aconchego e Natureza em Macuco
           </h2>
           <p className="font-body text-muted-foreground max-w-3xl mx-auto text-lg leading-relaxed">
-            Desde 2010, a Pousada Pouso Alegre oferece aos seus hóspedes uma experiência única de 
-            hospedagem. Localizada em meio à exuberante natureza do interior, nossa pousada combina 
-            o charme rústico com todo o conforto que você merece.
+            A Hospedaria Pouso Alegre está localizada em Macuco, na bela região serrana do estado do Rio de Janeiro. 
+            Nossa hospedaria oferece um ambiente acolhedor e familiar, ideal para quem busca descanso e contato com 
+            a natureza, cercado pela Mata Atlântica e próximo às principais atrações da região.
           </p>
         </div>
 

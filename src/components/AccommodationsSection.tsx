@@ -7,19 +7,19 @@ const AccommodationsSection = () => {
   const rooms = [
     {
       image: roomSuite,
-      title: "Suíte Master",
-      description: "Espaço amplo com varanda privativa e vista para as montanhas",
+      title: "Quarto Família",
+      description: "Quarto espaçoso ideal para famílias, com vista para a natureza",
       capacity: "2-4 pessoas",
-      price: "R$ 450",
-      amenities: ["Wi-Fi", "Ar condicionado", "Café da manhã", "Frigobar"],
+      price: "Consultar",
+      amenities: ["Wi-Fi", "Ventilador", "Café da manhã", "Roupa de cama"],
     },
     {
       image: roomDouble,
       title: "Quarto Casal",
-      description: "Conforto e aconchego para sua estadia romântica",
+      description: "Quarto aconchegante com cama de casal",
       capacity: "2 pessoas",
-      price: "R$ 280",
-      amenities: ["Wi-Fi", "Ar condicionado", "Café da manhã"],
+      price: "Consultar",
+      amenities: ["Wi-Fi", "Ventilador", "Café da manhã"],
     },
   ];
 
@@ -31,11 +31,11 @@ const AccommodationsSection = () => {
             Acomodações
           </span>
           <h2 className="font-display text-4xl md:text-5xl font-semibold text-foreground mb-6">
-            Conforto em Cada Detalhe
+            Acomodações Confortáveis
           </h2>
           <p className="font-body text-muted-foreground max-w-2xl mx-auto text-lg">
-            Nossos quartos foram pensados para proporcionar o máximo conforto 
-            durante sua estadia.
+            Quartos aconchegantes e bem equipados para garantir uma estadia 
+            agradável na região serrana de Macuco.
           </p>
         </div>
 

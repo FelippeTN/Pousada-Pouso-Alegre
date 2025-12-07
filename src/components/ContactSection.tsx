@@ -6,17 +6,17 @@ const ContactSection = () => {
     {
       icon: MapPin,
       title: "Endereço",
-      content: "Estrada Rural, km 15 - Interior, MG",
+      content: "Macuco - RJ, Região Serrana",
     },
     {
       icon: Phone,
       title: "Telefone",
-      content: "(35) 99999-9999",
+      content: "(22) 9 9999-9999",
     },
     {
       icon: Mail,
       title: "E-mail",
-      content: "contato@pousoalegre.com.br",
+      content: "contato@hospedariapousoalegre.com.br",
     },
     {
       icon: Clock,
